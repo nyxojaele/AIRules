@@ -1,0 +1,19 @@
+name: Preflight
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  rule-paths:
+    # This name is what the branch ruleset's required status check refers to.
+    name: Rule paths check
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+      - run: bash scripts/check-paths.sh

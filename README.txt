@@ -1,0 +1,1 @@
+This repo is intended to be used as a submodule (in the "common" folder) under an AI Project's /.claude/rules folder.
