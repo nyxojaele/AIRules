@@ -1,8 +1,3 @@
----
-paths:
-  - "**/*.cs"
----
-
 # code-style-csharp
 
 ## Layout and formatting
