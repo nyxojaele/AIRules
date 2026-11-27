@@ -11,9 +11,9 @@ permissions:
 jobs:
   rule-paths:
     # This name is what the branch ruleset's required status check refers to.
-    name: Rule paths check
+    name: Sync rule paths
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v5
-      - run: bash scripts/check-paths.sh
+      - run: bash scripts/sync-rule-paths.sh

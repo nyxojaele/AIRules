@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #
-# Checks that the paths: header of rules/code-style.md lists every pattern
-# from the paths: headers of the language rule files in rules/code-style/.
+# Checks that the paths: header of code-style.md lists every pattern
+# from the paths: headers of the language rule files in code-style/.
 # Each language file is the only place its patterns are written by hand;
 # code-style.md carries the combined list so it loads for any code file.
 #
@@ -23,8 +23,8 @@ export LC_ALL=C
 
 cd "$(dirname "$0")/.."
 
-combined="rules/code-style.md"
-lang_dir="rules/code-style"
+combined="code-style.md"
+lang_dir="code-style"
 
 fix=0
 case "${1:-}" in
